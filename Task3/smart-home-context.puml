@@ -1,0 +1,26 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Контекстная диаграмма — интеграция «Умный дом» в PropDevelopment
+
+Person(owner, "Собственник", "Управляет доступом в дом через мобильное приложение.\nОткрывает домофон/шлагбаум по звонку")
+Person(resident, "Жилец", "Проходит через дверь / проезжает через шлагбаум.\nРаспознаётся автоматически по лицу или номеру авто")
+
+System_Boundary(propdev_boundary, "PropDevelopment") {
+    System(propdev, "Платформа PropDevelopment", "Мобильное приложение собственников,\nбэкенд услуг ЖКХ, CRM с реестром жильцов и авто")
+}
+
+System_Ext(smart_intercom, "Интеллектуальный домофон\n(Партнёр)", "Распознавание лиц по биометрии,\nвидеозвонок, открытие двери")
+System_Ext(smart_barrier, "Интеллектуальный шлагбаум\n(Партнёр)", "Распознавание номеров авто,\nавтоматический допуск")
+
+Rel(owner, propdev, "Управляет списком доступа,\nоткрывает по звонку,\nпросматривает журнал", "Мобильное приложение")
+Rel(resident, smart_intercom, "Подходит к двери\n→ распознавание лица", "")
+Rel(resident, smart_barrier, "Подъезжает к шлагбауму\n→ распознавание номера", "")
+Rel(propdev, smart_intercom, "Реестр разрешённых жильцов.\nКоманды на открытие двери\nпо требованию собственника", "REST API")
+Rel(smart_intercom, propdev, "Запрос прав по лицу.\nСобытия: вход, выход,\nпопытка доступа", "REST API, Webhook")
+Rel(propdev, smart_barrier, "Реестр разрешённых авто.\nКоманды на открытие\nпо требованию собственника", "REST API")
+Rel(smart_barrier, propdev, "Запрос прав по номеру.\nСобытия: въезд, выезд,\nпопытка проезда", "REST API, Webhook")
+
+@enduml
