@@ -1,0 +1,758 @@
+{
+  "suspicious_events": [
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "92cc4f8c-25d9-4314-ab1e-adcc85f18495",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:45:58.321488Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": null
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "92cc4f8c-25d9-4314-ab1e-adcc85f18495",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:45:58.321488Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": "system::extension-apiserver-authentication-reader",
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": 201
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "3b999726-6918-49d9-b886-f9b116b0dc7f",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:45:58.325675Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": null
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "3b999726-6918-49d9-b886-f9b116b0dc7f",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:45:58.325675Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": "system::leader-locking-kube-controller-manager",
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": 201
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "df7e01b9-f553-4ae1-b0c3-36e7e45b9dea",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:45:58.328195Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": null
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "df7e01b9-f553-4ae1-b0c3-36e7e45b9dea",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:45:58.328195Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": "system::leader-locking-kube-scheduler",
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": 201
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "0d10aac6-25cb-4c47-bd43-657ac36348da",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:45:58.330441Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": null
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "0d10aac6-25cb-4c47-bd43-657ac36348da",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:45:58.330441Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": "system:controller:bootstrap-signer",
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": 201
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "c0d4b5ca-ae8f-415c-9d41-187815de7a73",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:45:58.332722Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": null
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "c0d4b5ca-ae8f-415c-9d41-187815de7a73",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:45:58.332722Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": "system:controller:cloud-provider",
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": 201
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "611ad9a6-1814-4572-a285-2dacf2952a83",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:45:58.334392Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": null
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "611ad9a6-1814-4572-a285-2dacf2952a83",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:45:58.334392Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": "system:controller:token-cleaner",
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings",
+      "responseCode": 201
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "b6dff9f4-7df0-4ba1-ba60-9c5e2a6e8633",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:45:58.336373Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-public",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-public/rolebindings",
+      "responseCode": null
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "b6dff9f4-7df0-4ba1-ba60-9c5e2a6e8633",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:45:58.336373Z",
+      "user": {
+        "username": "system:apiserver",
+        "groups": [
+          "system:authenticated",
+          "system:masters"
+        ]
+      },
+      "sourceIPs": [
+        "::1"
+      ],
+      "userAgent": "kube-apiserver/v1.33.1 (linux/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": "system:controller:bootstrap-signer",
+        "namespace": "kube-public",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-public/rolebindings",
+      "responseCode": 201
+    },
+    {
+      "event_type": "secrets_access",
+      "auditID": "0c36c1c9-5cfc-4adb-a9dc-146ced37e599",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:45:59.094362Z",
+      "user": {
+        "username": "system:kube-controller-manager",
+        "groups": [
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.2"
+      ],
+      "userAgent": "kube-controller-manager/v1.33.1 (linux/arm64) kubernetes/8adc0f0/shared-informers",
+      "objectRef": {
+        "resource": "secrets",
+        "subresource": null,
+        "name": null,
+        "namespace": null,
+        "apiVersion": "v1"
+      },
+      "verb": "list",
+      "requestURI": "/api/v1/secrets?limit=500&resourceVersion=0",
+      "responseCode": null
+    },
+    {
+      "event_type": "secrets_access",
+      "auditID": "0c36c1c9-5cfc-4adb-a9dc-146ced37e599",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:45:59.094362Z",
+      "user": {
+        "username": "system:kube-controller-manager",
+        "groups": [
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.2"
+      ],
+      "userAgent": "kube-controller-manager/v1.33.1 (linux/arm64) kubernetes/8adc0f0/shared-informers",
+      "objectRef": {
+        "resource": "secrets",
+        "subresource": null,
+        "name": null,
+        "namespace": null,
+        "apiVersion": "v1"
+      },
+      "verb": "list",
+      "requestURI": "/api/v1/secrets?limit=500&resourceVersion=0",
+      "responseCode": 200
+    },
+    {
+      "event_type": "auth_check",
+      "auditID": "32fe8814-6173-42b8-8f15-6220ff6c796f",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:46:53.849944Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "selfsubjectaccessreviews",
+        "subresource": null,
+        "name": null,
+        "namespace": null,
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/authorization.k8s.io/v1/selfsubjectaccessreviews",
+      "responseCode": null
+    },
+    {
+      "event_type": "auth_check",
+      "auditID": "32fe8814-6173-42b8-8f15-6220ff6c796f",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:46:53.849944Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "selfsubjectaccessreviews",
+        "subresource": null,
+        "name": null,
+        "namespace": null,
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/authorization.k8s.io/v1/selfsubjectaccessreviews",
+      "responseCode": 201
+    },
+    {
+      "event_type": "secrets_access",
+      "auditID": "efe30592-32c2-4cab-ae67-37abeda2cfcd",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:46:53.900486Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "secrets",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "list",
+      "requestURI": "/api/v1/namespaces/kube-system/secrets?limit=500",
+      "responseCode": null
+    },
+    {
+      "event_type": "secrets_access",
+      "auditID": "efe30592-32c2-4cab-ae67-37abeda2cfcd",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:46:53.900486Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "secrets",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "list",
+      "requestURI": "/api/v1/namespaces/kube-system/secrets?limit=500",
+      "responseCode": 200
+    },
+    {
+      "event_type": "secrets_access",
+      "auditID": "45d8a0e5-c832-4dd1-b56e-1913f29fb308",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:46:53.956137Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "secrets",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "list",
+      "requestURI": "/api/v1/namespaces/kube-system/secrets?limit=500",
+      "responseCode": null
+    },
+    {
+      "event_type": "secrets_access",
+      "auditID": "45d8a0e5-c832-4dd1-b56e-1913f29fb308",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:46:53.956137Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "secrets",
+        "subresource": null,
+        "name": null,
+        "namespace": "kube-system",
+        "apiVersion": "v1"
+      },
+      "verb": "list",
+      "requestURI": "/api/v1/namespaces/kube-system/secrets?limit=500",
+      "responseCode": 403
+    },
+    {
+      "event_type": "privileged_pod",
+      "auditID": "436d3371-2fe1-4d6a-94d3-f46d1ba5daf3",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:46:54.066018Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "pods",
+        "subresource": null,
+        "name": "privileged-pod",
+        "namespace": "secure-ops",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/api/v1/namespaces/secure-ops/pods?fieldManager=kubectl-client-side-apply&fieldValidation=Strict",
+      "responseCode": 201
+    },
+    {
+      "event_type": "rolebinding_create",
+      "auditID": "f5de3546-a78c-405f-a022-516affc5502f",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:46:54.294879Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": null,
+        "namespace": "secure-ops",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/secure-ops/rolebindings?fieldManager=kubectl-client-side-apply&fieldValidation=Strict",
+      "responseCode": null
+    },
+    {
+      "event_type": "clusteradmin_rolebinding",
+      "auditID": "f5de3546-a78c-405f-a022-516affc5502f",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:46:54.294879Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "rolebindings",
+        "subresource": null,
+        "name": "escalate-binding",
+        "namespace": "secure-ops",
+        "apiVersion": "v1"
+      },
+      "verb": "create",
+      "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/secure-ops/rolebindings?fieldManager=kubectl-client-side-apply&fieldValidation=Strict",
+      "responseCode": 201
+    },
+    {
+      "event_type": "exec_into_pod",
+      "auditID": "c22979ef-cbe2-4d44-baca-29de3f52c87d",
+      "stage": "RequestReceived",
+      "timestamp": "2026-07-12T20:47:31.825895Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "pods",
+        "subresource": "exec",
+        "name": "attacker-pod",
+        "namespace": "secure-ops",
+        "apiVersion": "v1"
+      },
+      "verb": "get",
+      "requestURI": "/api/v1/namespaces/secure-ops/pods/attacker-pod/exec?command=ls&command=%2F&container=attacker-pod&stderr=true&stdout=true",
+      "responseCode": null
+    },
+    {
+      "event_type": "exec_into_pod",
+      "auditID": "c22979ef-cbe2-4d44-baca-29de3f52c87d",
+      "stage": "ResponseStarted",
+      "timestamp": "2026-07-12T20:47:31.825895Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "pods",
+        "subresource": "exec",
+        "name": "attacker-pod",
+        "namespace": "secure-ops",
+        "apiVersion": "v1"
+      },
+      "verb": "get",
+      "requestURI": "/api/v1/namespaces/secure-ops/pods/attacker-pod/exec?command=ls&command=%2F&container=attacker-pod&stderr=true&stdout=true",
+      "responseCode": 101
+    },
+    {
+      "event_type": "exec_into_pod",
+      "auditID": "c22979ef-cbe2-4d44-baca-29de3f52c87d",
+      "stage": "ResponseComplete",
+      "timestamp": "2026-07-12T20:47:31.825895Z",
+      "user": {
+        "username": "minikube-user",
+        "groups": [
+          "system:masters",
+          "system:authenticated"
+        ]
+      },
+      "sourceIPs": [
+        "192.168.49.1"
+      ],
+      "userAgent": "kubectl/v1.33.1 (darwin/arm64) kubernetes/8adc0f0",
+      "objectRef": {
+        "resource": "pods",
+        "subresource": "exec",
+        "name": "attacker-pod",
+        "namespace": "secure-ops",
+        "apiVersion": "v1"
+      },
+      "verb": "get",
+      "requestURI": "/api/v1/namespaces/secure-ops/pods/attacker-pod/exec?command=ls&command=%2F&container=attacker-pod&stderr=true&stdout=true",
+      "responseCode": 101
+    }
+  ]
+}

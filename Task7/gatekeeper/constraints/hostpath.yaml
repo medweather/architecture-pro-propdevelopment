@@ -1,0 +1,13 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sPSPHostPath
+metadata:
+  name: block-hostpath-volumes
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    namespaces:
+      - "audit-zone"
+  parameters:
+    message: "Запрещено использовать hostPath в namespace audit-zone"
