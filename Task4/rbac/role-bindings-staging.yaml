@@ -1,0 +1,27 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: dev-alice-editor
+  namespace: staging
+subjects:
+- kind: User
+  name: dev-alice
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: namespace-editor
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: viewer-bob-reader
+  namespace: staging
+subjects:
+- kind: User
+  name: viewer-bob
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: namespace-viewer
+  apiGroup: rbac.authorization.k8s.io
